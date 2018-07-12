@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2017 Emmanuel Kehinde
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.ki.leo.activities.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="358dp"
+            android:layout_height="110dp"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/what_i_do"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            app:fontFamily="@font/atma_light" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="133dp"
+            android:layout_marginTop="8dp"
+            android:baselineAligned="false"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/about"
+            android:textAlignment="center"
+            android:textColor="#444"
+            android:textSize="14sp"
+            app:fontFamily="@font/atma_light" />
+
+        <TextView
+            android:id="@+id/versioning"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/versioning"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:fontFamily="@font/atma_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Developed by:"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textColor="#111"
+            android:textSize="16sp"
+            app:fontFamily="@font/atma_light" />
+
+        <TextView
+            android:id="@+id/realest"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="@string/realest"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            app:fontFamily="@font/atma_light" />
+
+        <!--<TextView
+            android:id="@+id/txt_link"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/mfuon_twitter"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontFamily="@font/atma_light" />
+
+        <TextView
+            android:id="@+id/txt_link_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/mfuon_facebook"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontFamily="@font/atma_light" />-->
+
+        <TextView
+            android:id="@+id/txt_link_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/mfuon_review"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:fontFamily="@font/atma_light" />
+
+    </LinearLayout>
+
+</ScrollView>
