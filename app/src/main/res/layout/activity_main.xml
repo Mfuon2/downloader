@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@mipmap/back"
     android:fillViewport="true"
     tools:context="com.ki.leo.activities.MainActivity">
 <RelativeLayout
@@ -66,37 +66,39 @@
             android:text="@string/textview"
             android:textAlignment="center"
             android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
             android:textSize="18sp"
-            app:fontFamily="@font/atma_light" />
+            app:fontFamily="@font/abeezee" />
 
         <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="309dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:textColorHint="@color/colorPrimary">
 
             <EditText
                 android:id="@+id/txt_tweet_url"
-                android:layout_width="match_parent"
+                android:layout_width="310dp"
                 android:layout_height="48dp"
                 android:inputType="textUri"
                 android:textAlignment="center"
-                android:textColorHint="@color/tw__composer_light_gray" />
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
         </android.support.design.widget.TextInputLayout>
 
 
         <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="318dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:textColorHint="@color/colorPrimary">
 
             <EditText
                 android:id="@+id/txt_filename"
-                android:layout_width="match_parent"
+                android:layout_width="318dp"
                 android:layout_height="48dp"
                 android:textAlignment="center"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorWhite" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -112,7 +114,8 @@
             android:paddingRight="16dp"
             android:text="@string/download_video"
             android:textAllCaps="false"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorWhite"
+            android:typeface="normal" />
 
         <TextView
             android:id="@+id/textView2"
@@ -122,7 +125,7 @@
             android:textAlignment="center"
             android:textColor="@color/tw__composer_red"
             android:textSize="10sp"
-            app:fontFamily="@font/atma_light" />
+            app:fontFamily="@font/abeezee" />
 
         <Button
             android:id="@+id/btn_about_app"
@@ -133,7 +136,8 @@
             android:background="@drawable/btn_round2"
             android:text="@string/about_twittersave"
             android:textAllCaps="false"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorWhite"
+            android:typeface="normal" />
 
     </LinearLayout>
 

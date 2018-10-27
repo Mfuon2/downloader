@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Emmanuel Kehinde
+ * Copyright (C) 2018  ~LMfuon
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.kehinde.twittersave", appContext.getPackageName());
+        assertEquals("com.ki.leo", appContext.getPackageName());
     }
 }

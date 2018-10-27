@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Emmanuel Kehinde
+ * Copyright (C) 2018  ~LMfuon
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -99,7 +99,7 @@ public class AutoListenService extends Service {
             vNotification = new Notification.Builder(context,GENERAL_CHANNEL)
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(bitmap)
-                    .setContentTitle("Lolo AutoListen Running...")
+                    .setContentTitle("Easy-Down AutoListen Running...")
                     .setContentText("Copy tweet URL to start downloading video or gif")
                     .setContentIntent(openActivityPIntent)
                     .setAutoCancel(true)
@@ -112,7 +112,7 @@ public class AutoListenService extends Service {
             vNotification = new Notification.Builder(context)
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(bitmap)
-                    .setContentTitle("Lolo AutoListen Running...")
+                    .setContentTitle("Easy-Down AutoListen Running...")
                     .setContentText("Copy tweet URL to start downloading video or gif")
                     .setContentIntent(openActivityPIntent)
                     .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
@@ -127,7 +127,7 @@ public class AutoListenService extends Service {
             vNotification1 = new NotificationCompat.Builder(context)
                     .setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(bitmap)
-                    .setContentTitle("Lolo Listening...")
+                    .setContentTitle("Easy-Down Listening...")
                     .setContentText("Copy Tweet or Youtube URL to start downloading video or gif")
                     .setContentIntent(openActivityPIntent)
                     .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
@@ -138,7 +138,7 @@ public class AutoListenService extends Service {
 
         }
         mClipboard.addPrimaryClipChangedListener(listener);
-        Toast.makeText(context, "Lolo Listener On", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Easy-Down Listener On", Toast.LENGTH_SHORT).show();
         return super.onStartCommand(intent, flags, startId);
     }
 
@@ -179,7 +179,7 @@ public class AutoListenService extends Service {
 
         if (mClipboard!=null && listener!=null){
             this.mClipboard.removePrimaryClipChangedListener(listener);
-            Toast.makeText(context, "Lolo AutoListen Disabled", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Easy-Down AutoListen Disabled", Toast.LENGTH_SHORT).show();
 
         }
     }

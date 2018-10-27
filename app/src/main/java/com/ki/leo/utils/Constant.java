@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Emmanuel Kehinde
+ * Copyright (C) 2018  ~LMfuon
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 
 /**
- * Created by kehinde on 3/31/17.
+ * Created by LMfuon on 3/31/2018.
  */
 
 @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)

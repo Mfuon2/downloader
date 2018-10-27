@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/back"
     tools:context=".activities.DownloadYoutube">
 
     <RelativeLayout
@@ -40,9 +41,9 @@
             android:layout_centerHorizontal="true"
             android:text="@string/text_view_resolution"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
             android:textSize="24sp"
-            app:fontFamily="@font/atma_light" />
+            app:fontFamily="@font/abeezee" />
 
 
     </RelativeLayout>

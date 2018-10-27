@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Emmanuel Kehinde
+ * Copyright (C) 2018  ~LMfuon
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import android.content.Intent;
 
 
 /**
- * Created by kehinde on 7/5/17.
+ * Created by LMfuon on 7/5/2018.
  */
 
 public class StopAutoListenReceiver extends BroadcastReceiver{

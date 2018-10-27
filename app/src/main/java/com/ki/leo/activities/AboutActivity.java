@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Emmanuel Kehinde
+ * Copyright (C) 2018  ~LMfuon
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +23,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.ki.leo.R;
@@ -32,7 +34,10 @@ public class AboutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_about);
+
 
         /*TextView txt_link= (TextView) findViewById(R.id.txt_link);
         TextView txt_link_facebook= (TextView) findViewById(R.id.txt_link_facebook);*/

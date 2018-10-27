@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/youtubeExtractor/src/androidTest/androidTest.iml" filepath="$PROJECT_DIR$/youtubeExtractor/src/androidTest/androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/src/androidTest/androidTest1.iml" filepath="$PROJECT_DIR$/app/src/androidTest/androidTest1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youtubeExtractor/src/main/main.iml" filepath="$PROJECT_DIR$/youtubeExtractor/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/src/main/main1.iml" filepath="$PROJECT_DIR$/app/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/src/test/test.iml" filepath="$PROJECT_DIR$/app/src/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/twi.iml" filepath="$PROJECT_DIR$/twi.iml" />
       <module fileurl="file://$PROJECT_DIR$/youtubeExtractor/youtubeExtractor.iml" filepath="$PROJECT_DIR$/youtubeExtractor/youtubeExtractor.iml" />
     </modules>

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Emmanuel Kehinde
+ * Copyright (C) 2018  ~LMfuon
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,6 +40,8 @@ import android.util.SparseArray;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
@@ -90,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         TwitterAuthConfig authConfig = new TwitterAuthConfig(Constant.TWITTER_KEY, Constant.TWITTER_SECRET);
         Fabric.with(this, new Twitter(authConfig));
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         btn_about_app = findViewById(R.id.btn_about_app);
         txt_tweet_url = findViewById(R.id.txt_tweet_url);
         txt_filename = findViewById(R.id.txt_filename);
-        txt_tweet_url.setEnabled(false);
+        txt_tweet_url.setEnabled(true);
         txt_filename.setEnabled(false);
         swt_autolisten = findViewById(R.id.swt_autolisten);
 
@@ -217,10 +221,8 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(txt_tweet_url.getText().toString().contains("twitter.com/")){
-                    txt_filename.setTextColor(colorAccent);
                     txt_filename.setText(R.string.twitterLink);
                 }else if(txt_tweet_url.getText().toString().contains("://youtu.be/") || txt_tweet_url.getText().toString().contains("youtube.com/watch?v=")){
-                    txt_filename.setTextColor(R.color.tw__composer_red);
                     txt_filename.setText(R.string.youtubeLink);
                 }else {
                     txt_filename.setText(R.string.invalidLink);
@@ -359,7 +361,7 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.hide();
         new AlertDialog.Builder(this)
                 .setTitle("Empty Or Invalid URL")
-                .setMessage("Please Share Video With lolo from Twitter or Youtube for it to Grab the URL")
+                .setMessage("Please Share Video With----- Easy-Down from Twitter or Youtube for it to Grab the URL")
                 .setIcon(android.R.drawable.ic_dialog_info)
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
