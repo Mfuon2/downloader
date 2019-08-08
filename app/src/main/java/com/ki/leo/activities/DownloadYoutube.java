@@ -10,6 +10,7 @@ import android.os.Environment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.Button;
@@ -38,8 +39,8 @@ public class DownloadYoutube extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_download_youtube);
         String s = getIntent().getStringExtra("EXTRA_SESSION_ID");
-        mainLayout = (LinearLayout) findViewById(R.id.main_layout);
-        mainProgressBar = (ProgressBar) findViewById(R.id.prgrBar);
+        mainLayout = findViewById(R.id.main_layout);
+        mainProgressBar = findViewById(R.id.prgrBar);
         btn_download = findViewById(R.id.btn_download);
         if(s.length() > 0){
             mainProgressBar.setActivated(true);
@@ -52,18 +53,14 @@ public class DownloadYoutube extends AppCompatActivity {
     @SuppressLint("StaticFieldLeak")
     private void getYoutubeDownloadUrl(String youtubeLink) {
         new YouTubeExtractor(this) {
-
             @Override
             public void onExtractionComplete(SparseArray<YtFile> ytFiles, VideoMeta vMeta) {
                 mainProgressBar.setVisibility(View.GONE);
-                // Iterate over itags
                 for (int i = 0, itag; i < ytFiles.size(); i++) {
                     itag = ytFiles.keyAt(i);
-                    // ytFile represents one file with its url and meta data
                     YtFile ytFile = ytFiles.get(itag);
-                    // Just add videos in a decent format => height -1 = audio
-                    if (ytFile.getFormat().getHeight() == -1 || ytFile.getFormat().getHeight() >= 360) {
-                        addButtonToMainLayout(vMeta.getTitle(), ytFile);
+                    if (ytFile.getFormat().getHeight() == -1 || ytFile.getFormat().getHeight() >= 20) {
+                        addButtonToMainLayout(vMeta.getVideoId(), ytFile);
                     }
                 }
             }

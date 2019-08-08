@@ -117,9 +117,10 @@ public class SampleDownloadActivity extends AppCompatActivity {
                     // ytFile represents one file with its url and meta data
                     YtFile ytFile = ytFiles.get(itag);
                     // Just add videos in a decent format => height -1 = audio
-                    if (ytFile.getFormat().getHeight() == -1 || ytFile.getFormat().getHeight() >= 360) {
+                    if (ytFile.getFormat().getHeight() == -1 || ytFile.getFormat().getHeight() >= 50) {
                         addButtonToMainLayout(vMeta.getTitle(), ytFile);
                     }
+                    Log.wtf("FILE TYPES"," ++++++++++++++++++++++++++ " + ytFile.getFormat().getHeight());
                 }
             }
         }.extract(youtubeLink, true, false);
